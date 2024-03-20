@@ -1,10 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
-using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Moq;
 using WeatherForecast.Dal.Repositories;
 using WeatherForecast.Models;
 using WeatherForecast.UtilitiesService;
