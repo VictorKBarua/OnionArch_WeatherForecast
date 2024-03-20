@@ -37,7 +37,7 @@ namespace WeatherForecast.UtilitiesService.Service
             if (obj == null) return (false, 0, ServiceConstant.ErrMsgNullEntity);
             try
             {
-                if (obj.Date < DateTime.Now.Date)
+                if (obj.Date < DateTime.Now.Date)// validating date 
                 {
                     return (false, 0, ServiceConstant.ErrMsgDateRange);
                 }
