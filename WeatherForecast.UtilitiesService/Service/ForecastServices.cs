@@ -19,7 +19,7 @@ namespace WeatherForecast.UtilitiesService.Service
         {
             try
             {
-                return (true, _ForecastRepositories.GetAll().Where(x => x.Date.Date >= DateTime.Now.Date && x.Date.Date <= DateTime.Now.Date.AddDays(ServiceConstant.constTakeValue)).ToList(), string.Empty);
+                return (true, _ForecastRepositories.GetAll().Where(x => x.Date.Date >= DateTime.Now.Date && x.Date.Date <= DateTime.Now.Date.AddDays(ServiceConstant.constTakeValue)), string.Empty);
             }
             catch (Exception ex)
             {

@@ -2,6 +2,11 @@
 {
     public static class DomainConstant
     {
+        #region(Error Messages)
+        public const string ErrMsgDateRange = "Forecast cannot be of past date.";
+        public const string ErrMsgTemperatureRange = "Temperature must be between (-)60 and (+)60 degrees.";
+        #endregion
+
         #region(Constants Value)
         public const string constStrFreezing = "Freezing";
         public const string constStrBracing = "Bracing";

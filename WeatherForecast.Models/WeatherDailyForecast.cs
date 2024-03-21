@@ -16,12 +16,22 @@ namespace WeatherForecast.Models
 
         public WeatherDailyForecast(DateTime date, double temperature)
         {
+            //if (date < DateTime.Now)
+            //{
+            //    throw new ArgumentOutOfRangeException(nameof(date), DomainConstant.ErrMsgDateRange);
+            //}
+
+            //if (temperature < -60 || temperature > 60)
+            //{
+            //    throw new ArgumentOutOfRangeException(nameof(temperature), DomainConstant.ErrMsgTemperatureRange);
+            //}
+
             Date = date;
             Temperature = temperature;
             TemperatureDescription = GetTemperatureDescription(temperature);
         }
 
-        // Logic to convert temperature to a descriptive term (e.g., "Freezing", "Hot")
+        // Logic to convert temperature to a a human readable way (e.g., "Freezing", "Hot", etc)
         public string GetTemperatureDescription(double temperature)
         {
             if (temperature <= -10)
