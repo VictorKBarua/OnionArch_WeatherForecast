@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  weatherforecast.api:
+    build: .
+    ports:
+      - "8080:80" # Map container port 80 to host port 8080 (adjust as needed)
+    environment:
+      # Define any environment variables needed by your application
+      WeatherDbConnection: "Data Source=HP-NOTEBOOK-VIC;Initial Catalog=WeatherForecastDb;Integrated Security=True;TrustServerCertificate=True;"  
+
+  # Add additional services here (e.g., database)
