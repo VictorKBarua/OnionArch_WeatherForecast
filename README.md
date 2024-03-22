@@ -1,1 +1,2 @@
-# Webcast_EuroNext_WeatherForecast
+ EuroNext WeatherForecast application
+ .Net core onion architecture
