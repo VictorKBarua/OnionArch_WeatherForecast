@@ -22,13 +22,15 @@ Validations:
 <li>Open <b>Package manager console</b> under DAL/Repository layer the type <b>update-database</b> command for migration.</li>
 <li>It will create our database and empty table according to connection string.</li>
 <li>Run the application</li>
-<li>We need to first insert weather forecast into table. For this we need to make first api call (from postman)(/api/WeatherForecast/AddWeatherForecast) with payload as below: </li>
+<li>We need to first insert weather forecast into table. For this we need to make first api Post call (from postman)(/api/WeatherForecast/AddWeatherForecast) with payload as below: </li>
 <br/>
 
 ![Capture](https://github.com/VictorKBarua/Webcast-Euronext_Assignment/assets/57985914/01d0dbab-555f-44e3-8b3c-5d0439311a85)
 
 
-<li>We wil receive 200 status code on successfull insertion of data to database.</li>
+<li>We wil receive 200 status code on successfull insertion of data to database. We need make multiple calls so that we can have sufficient data to retrive.</li>
+<li>Made a another call to retrive data of 7 days. For this we need to make a GET call to api (/api/WeatherForecast/GetAllWeatherForecast). </li>
+
 <h2>Technologies implemented:</h2>
 <li>.Net 6</li>
 <li>Entityframework core 6(Code first approach).</li>
