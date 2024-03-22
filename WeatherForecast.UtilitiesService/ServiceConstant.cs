@@ -4,7 +4,7 @@
     {
         #region(Error Messages)
         public const string ErrMsgNullEntity = "Entity is null.";
-        public const string ErrMsgDateRange = "Date cannot be in the past.";
+        public const string ErrMsgDateRange = "Forecast cannot be of past date.";
         public const string ErrMsgTemperatureRange = "Temperature must be between (-)60 and (+)60 degrees.";
         #endregion
 
