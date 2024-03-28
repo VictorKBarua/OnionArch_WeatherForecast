@@ -2,9 +2,27 @@
 <h4>Weatherforecast is an api interface based .net core project where onion architecture has been used. We can start api integration from the first day without spending time on creating skeleton of the project.</h4> <br/>
 
  ![OnionArchitecture](https://github.com/VictorKBarua/Webcast-Euronext_Assignment/assets/57985914/d25f4cc3-feb0-43c4-a147-f8e4599f16b3)
+<br/> <h3>Advantages of having Onion Architecture. </h3> 
+<li>- Testibility: Unit test can be created for separate layers without an effect of other modules of the application. </li>
+<li>- Loose Coupling: Loosely coupled application as the outer layer of the application always communicates with the inner layer via interfaces. </li>
+<li>- Maintainable: Provides better maintainability as all the codes depend on layers or the center. </li>
+<li>- Domain entities are core and center part. It can have access to both the database and UI layers. </li>
+<li>- Internal layers never depend on the external layer. The code that may have changed should be part of an external layer.</li>
 
- <br/>This application has been developed based on below business requirements</h4>
-Business Requirements:
+<br/><h3>EuroNext WeatherForecast application is having below layers W.R.T Onion architecture.</h3>
+
+<li><b>WeatherForecast.Domain:</b> This layer is core layer of the application which is not dependent on any layer. It holds the database properties. It is the center part of the architecture. It holds all application domain objects. </li>
+
+<li><b>WeatherForecast.Dal/ Repository:</b> This layer will handle persistence mechanisms (databases, files, etc.). It holds a generic repository class with its interface implementation. It also holds a DbContext class. The Entity Framework Code First data access approach needs to create a data access context class that inherits from the DbContext class.</li>
+
+<li> <b>WeatherForecast.UtilitiesService/ Service:</b> This layer will contain application services and business logic.It holds business logic and interfaces. As it communicates via interfaces, it builds applications that are loosely coupled.</li>
+
+<li> <b>WeatherForecast.API:</b> It’s the most external layer. It could be the web application or Web API. This layer has an implementation of the Dependency Inversion Principle so that the application builds a loosely coupled application. It communicates to the internal layer via interfaces.</li>
+<li> <b>WeatherForecast.UnitTest:</b> This layer is created to unit tests the functionalities/ business logics of service layers.</li>
+
+ 
+ <br/><h4>This application has been developed based on below business requirements.</h4>
+<h5>Business Requirements:</h5>
 <li>- As a weatherman I want to store weather forecasts per day. </li>
 <li>- As a user I want to retrieve the weather forecast for a week in a human readable way (like 
       "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"). </li>
