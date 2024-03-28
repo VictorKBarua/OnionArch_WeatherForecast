@@ -46,17 +46,17 @@ Validations:
 ![Capture](https://github.com/VictorKBarua/Webcast-Euronext_Assignment/assets/57985914/01d0dbab-555f-44e3-8b3c-5d0439311a85)
 
 
-<li>We wil receive 200 status code on successfull insertion of data to database. We need make multiple calls so that we can have sufficient data to retrive.</li>
-<li>Made a another call to retrive data of 7 days. For this we need to make a GET call to api (/api/WeatherForecast/GetAllWeatherForecast). </li>
+<li>We will receive 200 status code on successfull insertion of data to database. We need make multiple calls so that we can have sufficient data to retrive.</li>
+<li>We need to make a another call to retrive data of 7 days. For this we need to make a GET call to api (/api/WeatherForecast/GetAllWeatherForecast). </li>
 
 <h2>Technologies implemented:</h2>
-<li>.Net 6</li>
+<li>.Net 6.</li>
 <li>Entityframework core 6(Code first approach).</li>
-<li>Followed Domain driven design.</li>
-<li>Dependency Injection</li>
-<li>Followed Seperation of Concern mechanism</li>
+<li>Followed Domain driven design.</li 
+<li>Dependency Injection.</li>
+<li>Followed Seperation of Concern mechanism.</li>
 <li>Implemented Unit test cases for relevant parts(Service layers). </li>
-<li>Implemented customized validations in Service layers</li>
+<li>Implemented customized validations in Service layers.</li>
 <li>Implemented const qualifier for error messages through out the application. </li>
 <li>Implemented try catch for error handling.</li>
-<li>browse <b>http://localhost:7259/swagger/index.html</b> for api</li>
+<li>browse <b>http://localhost:7259/swagger/index.html</b> for api.</li>
