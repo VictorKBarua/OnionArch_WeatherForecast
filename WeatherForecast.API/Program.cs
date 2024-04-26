@@ -17,7 +17,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
+// REGISTER MIDDLEWARE HERE
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
